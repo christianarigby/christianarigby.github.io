@@ -16,7 +16,7 @@
 title: Christiana Rigby
 email: christiana@christianarigby.com
 description: > # this means to ignore newlines until "baseurl:"
-
+  Paid for by Friends of Christiana Rigby
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://christianarigby.com" # the base hostname & protocol for your site, e.g. http://example.com
 donate_url: "https://secure.actblue.com/contribute/page/christiana"

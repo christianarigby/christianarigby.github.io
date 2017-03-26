@@ -21,8 +21,10 @@ $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
+$border-radius:    5px;
+
 // Width of the content area
-$content-width:    1200px;
+$content-width:    1000px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
@@ -39,6 +41,19 @@ $on-laptop:        800px;
 // Import partials from the `minima` theme.
 @import "minima";
 
+@mixin button {
+    display: inline-block;
+    padding: .75em 1em;
+    border: 0;
+    border-radius: $border-radius;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: $small-font-size;
+    line-height: normal;
+    cursor: pointer;
+}
+
 body {
     .wf-active & {
         font-family: "Roboto Slab";
@@ -48,6 +63,10 @@ body {
 .site-header {
     border-top: 0;
     background: $brand-color;
+    
+    @media screen and (min-width: $on-palm) {
+        padding: .5em 0;
+    }
 }
 
 .site-title {
@@ -60,8 +79,16 @@ body {
 
 .site-nav {
 
-    .page-link {
-        color: #fff;
+    @media screen and (min-width: $on-palm) {
+        .page-link {
+            @include button;
+            background: #fff;
+            color: $brand-color;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
     }
 }
 
@@ -69,17 +96,54 @@ body {
     color: $secondary-color;
 }
 
-a {
-
-    &.button {
-        display: inline-block;
-        font-family: sans-serif;
-        text-transform: uppercase;
-        border-radius: 5px;
-        padding: .75em 1em;
-        color: #fff;
-        font-weight: 700;
-        font-size: $small-font-size;
-        background: $brand-color;
-    }
+.button {
+    @include button;
+    color: #fff !important;
+    background: $brand-color;
 }
+
+.col-6 {
+    margin-bottom: 4%;
+}
+
+ @media screen and (min-width: $on-palm) {
+    
+    .col-6 {
+        float: left;
+        width: 48%;
+        margin-left: 4%;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+  }
+
+  label {
+      display: block;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+      padding: .75em;
+      width: 100%;
+      box-sizing: border-box;
+      border-radius: $border-radius;
+      border: 1px solid $grey-color-light;
+      font-family: inherit;
+  }
+
+  .mc-field-group {
+      margin-bottom: .75em;
+  }
+
+  .page-content {
+      background: #f5f5f5;
+  }
+
+  .footer-col-3 {
+      @media screen and (min-width: $on-palm) {
+          text-align: right;
+      }
+  }
