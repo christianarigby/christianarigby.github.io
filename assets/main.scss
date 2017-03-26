@@ -122,6 +122,7 @@ body {
 
   label {
       display: block;
+      padding-bottom: .25em;
   }
 
   input[type="text"],
@@ -131,7 +132,8 @@ body {
       box-sizing: border-box;
       border-radius: $border-radius;
       border: 1px solid $grey-color-light;
-      font-family: inherit;
+      font-family: sans-serif;
+      font-size: 100%;
   }
 
   .mc-field-group {
