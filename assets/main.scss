@@ -159,9 +159,10 @@ input[type="email"] {
     }
 }
 
-.footer-col-3 {
-    @media screen and (min-width: $on-palm) {
+.footer-col-2 {
+    @media screen and (min-width: $on-laptop) {
         text-align: right;
+        width: calc(65% - (#{$spacing-unit} / 2));
     }
 }
 
