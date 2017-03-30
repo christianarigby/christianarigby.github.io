@@ -3,7 +3,7 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
-title: Christiana Rigby | Candidate for Howard Country District 3
+title: Christiana Rigby | Candidate for Howard County District 3
 ---
 
 <div class="col-6">
