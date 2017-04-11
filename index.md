@@ -15,7 +15,7 @@ title: Christiana Rigby | Candidate for Howard County District 3
     <h1 class="post-title">Candidate for Howard County Council District 3</h1>
     <h2>Join us to create a Howard County that works for everyone.</h2>
     <!-- Begin MailChimp Signup Form -->
-    <form action="//christianarigby.us15.list-manage.com/subscribe/post?u=423aa8921c5fb3c05abbed14b&amp;id=00b08d67e1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <form action="//christianarigby.us15.list-manage.com/subscribe/post?u=423aa8921c5fb3c05abbed14b&amp;id=00b08d67e1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate autocomplete="off">
         <div id="mc_embed_signup_scroll">
             <div class="mc-field-group">
                 <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label>
