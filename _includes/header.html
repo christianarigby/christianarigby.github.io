@@ -2,7 +2,9 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ "/" | relative_url}}">{{ site.title | escape }}</a>
+    <a class="site-title" href="{{ "/" | relative_url}}">
+      <img class="site-title__identity" src="{{site.url}}/assets/images/christianarigby-logo.svg" alt="Christiana Rigby for Howard County Council District 3">
+    </a>
 
     <nav class="site-nav">
       <span class="menu-icon" onclick="void(0)">
@@ -14,9 +16,10 @@
       </span>
 
       <div class="trigger">
-        {% for my_page in site.pages %}
+        {% assign pages = site.pages | sort:"weight"  %}
+        {% for my_page in pages %}
           {% if my_page.title and my_page.url != '/' %}
-          <a class="page-link" href="{% if my_page.external_link %}{{ my_page.external_link}}{% else %}{{ my_page.url | relative_url }}{% endif %}">{{ my_page.title | escape }}</a>
+          <a class="page-link{% if my_page.classes %} {{ my_page.classes }}{% endif %}" href="{% if my_page.external_link %}{{ my_page.external_link}}{% else %}{{ my_page.url | relative_url }}{% endif %}">{{ my_page.title | escape }}</a>
           {% endif %}
         {% endfor %}
       </div>

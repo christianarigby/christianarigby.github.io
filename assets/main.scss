@@ -14,8 +14,8 @@ $spacing-unit:     30px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
-$brand-color:      #390042;
-$secondary-color:  #190044;
+$brand-color:      #380e3f;
+$secondary-color:  $brand-color;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -46,27 +46,32 @@ $on-laptop:        800px;
     padding: .75em 1em;
     border: 0;
     border-radius: $border-radius;
-    font-family: sans-serif;
     text-transform: uppercase;
     text-align: center;
     font-weight: 700;
     font-size: $small-font-size;
     line-height: normal;
     cursor: pointer;
+    font-family: inherit;
 }
 
 body {
     .wf-active & {
-        font-family: "Roboto Slab";
+        font-family: "Nunito Sans", $base-font-family;
+
+        h1, h2, h3, h4 {
+            font-family: "Roboto Slab"
+        }
     }
 }
 
 .site-header {
     border-top: 0;
     background: $brand-color;
+    padding: 1em 0;
     
     @media screen and (min-width: $on-palm) {
-        padding: .5em 0;
+        padding: 1.5em 0;
     }
 }
 
@@ -78,25 +83,46 @@ body {
     }
 }
 
+.site-title__identity {
+    width: 250px;
+}
+
 .site-nav {
 
     @media screen and (min-width: $on-palm) {
+
+        margin-top: .5em;
+
         .page-link {
             @include button;
-            background: #fff;
-            color: $brand-color;
+            color: #fff;
+            transition: background .25s;
+            background: $brand-color;
 
             &:hover {
                 text-decoration: none;
+                background: #fff;
+                color: $brand-color;
             }
+
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+
+        .page-link--button {
+            background: #fff;
+            color: $brand-color;
+            font-weight: 700;
         }
     }
 }
 
-.post-title {
+h1 {
     color: $secondary-color;
     font-size: 40px;
     line-height: 1.2;
+    letter-spacing: -1px;
 }
 
 .button {
@@ -144,7 +170,6 @@ input[type="email"] {
     box-sizing: border-box;
     border-radius: $border-radius;
     border: 1px solid $grey-color-light;
-    font-family: sans-serif;
     font-size: 100%;
 }
 
