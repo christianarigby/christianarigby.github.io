@@ -8,6 +8,12 @@
             {% if site.email %}
             <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             {% endif %}
+            {% if site.facebook_url %}
+            <li><a href="{{site.facebook_url}}" class="linked-icon"><span class="icon-facebook2"></span> Facebook</a></li>
+            {% endif %}
+            {% if site.facebook_url %}
+            <li><a href="{{site.twitter_url}}" class="linked-icon"><span class="icon-twitter"></span> Twitter</a></li>
+            {% endif %}
         </ul>
       </div>
 
