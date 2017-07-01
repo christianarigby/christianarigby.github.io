@@ -9,7 +9,7 @@ weight: 0
 
 # About Christiana Rigby
 
-Christiana&rsquo;s Howard County roots run deep and the vision of Jim Rouse has had a profound influence on her principles and values. __She was born and raised in District 3__, in the Columbia village of Kings Contrivance. Christiana attended HCPSS public schools, is a graduate of Hammond High School and mom to two future golden bears.
+Christiana&rsquo;s Howard County roots run deep and the vision of Jim Rouse has had a profound influence on her principles and values. She was born and raised in District 3, in the Columbia village of Kings Contrivance. Christiana attended HCPSS public schools, is a graduate of Hammond High School and mom to two future golden bears.
 
 After graduating from UMBC, Arizona Public Interest Research Group (Arizona PIRG) recruited Christiana to work as a community organizer. There she honed her skills leading consumer protection initiatives, strengthening environmental regulations, and fighting to safeguard employment opportunities for the LGBTQ community. Enhancing community is at the heart of all she does &mdash; be it bringing together businesses and nonprofits to aide neighbors in need, inspiring environmental action, and even empowering breast cancer survivors.
 
